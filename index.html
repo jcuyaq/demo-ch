@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EFCHA CONSULTANTS - Transformación digital, optimización operacional y resiliencia de la cadena de suministro hacia la Industria 4.0 para empresas agroindustriales y de alimentos en EE.UU. Dirigido por Eliot Felipe Chahuan.">
+    <title>EFCHA CONSULTANTS | Consultoría de Industria 4.0 Agroindustrial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2310b981'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3C/svg%3E">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header id="siteHeader">
+        <div class="container navbar">
+            <a href="#hero" class="logo" id="logoLink">
+                EFCHA<span>CONSULTANTS</span><span class="logo-dot"></span>
+            </a>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#hero" class="nav-link active" id="navLinkHero" data-translate="nav_home">Inicio</a></li>
+                    <li><a href="#about" class="nav-link" id="navLinkAbout" data-translate="nav_about">Nosotros</a></li>
+                    <li><a href="#services" class="nav-link" id="navLinkServices" data-translate="nav_services">Servicios</a></li>
+                    <li><a href="#growth" class="nav-link" id="navLinkGrowth" data-translate="nav_growth">Expansión</a></li>
+                    <li><a href="#calculator" class="nav-link" id="navLinkCalculator" data-translate="nav_calc">Cotizador</a></li>
+                    <li><a href="#contact" class="nav-link" id="navLinkContact" data-translate="nav_contact">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-controls">
+                <!-- Language Toggle Button -->
+                <button class="control-btn lang-btn" id="langToggle" data-translate="btn_lang" aria-label="Cambiar Idioma">EN</button>
+                
+                <!-- Theme Toggle Button -->
+                <button class="control-btn theme-btn" id="themeToggle" aria-label="Cambiar Tema">
+                    <!-- Sun icon (shown when dark mode is active to switch to light) -->
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="themeSun">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <!-- Moon icon (shown when light mode is active to switch to dark) -->
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="themeMoon" style="display: none;">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                
+                <button class="btn-contact-header" id="btnContactHeader" onclick="location.href='#contact'" data-translate="btn_consult">Agendar Consulta</button>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="hero-tag" data-translate="hero_tag">
+                        <span class="pulse"></span>
+                        Revolución Industrial Agroalimentaria
+                    </div>
+                    <h1 class="hero-title" id="mainHeroTitle" data-translate="hero_title">
+                        Impulsando la <span class="gradient-text">Industria 4.0</span> en la Agroindustria de EE.UU.
+                    </h1>
+                    <p class="hero-desc" data-translate="hero_desc">
+                        Ayudamos a los fabricantes medianos y pequeños de alimentos a modernizar sus operaciones mediante la integración digital, optimización de la cadena de frío y gobernanza estratégica robusta.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary" id="btnHeroContact" data-translate="btn_start">Iniciar Transformación</a>
+                        <a href="#services" class="btn btn-secondary" id="btnHeroServices" data-translate="btn_services">Ver Servicios</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h3 id="statYears">30+</h3>
+                            <p data-translate="stat_years_lbl">Años de Experiencia</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 id="statScale">7,900%</h3>
+                            <p data-translate="stat_scale_lbl">Escalamiento de Producción</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 id="statRevenue">$1.2B</h3>
+                            <p data-translate="stat_revenue_lbl">Gobernanza Corporativa</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="glass-sphere-container">
+                        <div class="glass-panel sphere-card">
+                            <span class="card-label" data-translate="metric_oee_lbl">Eficiencia Operativa</span>
+                            <div class="card-val" id="metricOee">+35%</div>
+                            <div class="card-meta" data-translate="metric_oee_desc">Mejora OEE proyectada en 1er año</div>
+                        </div>
+                        <div class="glass-panel sphere-card-2">
+                            <span class="card-label" data-translate="metric_spoilage_lbl">Cadena de Frío IoT</span>
+                            <div class="card-val" id="metricSpoilage">0%</div>
+                            <div class="card-meta" data-translate="metric_spoilage_desc">Excursiones térmicas con monitoreo activo</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="glass-panel-section">
+            <div class="container about-grid">
+                <div class="ceo-profile">
+                    <div class="ceo-image-container">
+                        <div class="ceo-fallback">
+                            <div class="avatar-placeholder">EC</div>
+                            <h3>Eliot Felipe Chahuan</h3>
+                            <p class="ceo-title-card" data-translate="ceo_title_card">Fundador y CEO</p>
+                        </div>
+                    </div>
+                    <div class="ceo-badge">
+                        <h4 data-translate="about_badge_title">IE Business School & MBA Tulane</h4>
+                        <p data-translate="about_badge_desc">Arquitecto SAP & Especialista ISO 22000</p>
+                    </div>
+                </div>
+                <div class="about-details">
+                    <span class="section-subtitle" data-translate="about_subtitle">Liderazgo Estratégico</span>
+                    <h2 class="section-title" data-translate="about_title">El Puente entre la Estrategia del Directorio y la Ejecución de Planta</h2>
+                    <p class="about-text" data-translate="about_text_1">
+                        EFCHA CONSULTANTS, liderada por Eliot Felipe Chahuan, aporta la experiencia de más de tres décadas transformando corporaciones agroindustriales líderes en Latinoamérica, como Gloria S.A. ($1.2B en ingresos) y San Fernando S.A. ($900M en ingresos).
+                    </p>
+                    <p class="about-text" style="margin-bottom: 2rem;" data-translate="about_text_2">
+                        Nuestra misión es resolver la brecha digital en los fabricantes agroalimentarios estadounidenses, permitiéndoles reemplazar sistemas heredados y manuales por infraestructuras ágiles e interconectadas.
+                    </p>
+                    
+                    <ul class="outcomes-list">
+                        <li class="outcome-item">
+                            <div class="outcome-icon">✓</div>
+                            <div class="outcome-text">
+                                <h4 data-translate="outcome_1_title">Soberanía Tecnológica & Creación de Empleo</h4>
+                                <p data-translate="outcome_1_desc">Modernización de plantas rurales con IoT y automatización para revertir la fuga de talento.</p>
+                            </div>
+                        </li>
+                        <li class="outcome-item">
+                            <div class="outcome-icon">✓</div>
+                            <div class="outcome-text">
+                                <h4 data-translate="outcome_2_title">Renacimiento de la Cadena de Suministro Doméstica</h4>
+                                <p data-translate="outcome_2_desc">Reducción del trayecto del campo a la mesa mediante optimización de inventarios con IA y redes de micro-distribución.</p>
+                            </div>
+                        </li>
+                        <li class="outcome-item">
+                            <div class="outcome-icon">✓</div>
+                            <div class="outcome-text">
+                                <h4 data-translate="outcome_3_title">Reclamación del Mercado Global</h4>
+                                <p data-translate="outcome_3_desc">Capacitación y adecuación de plantas con procesos eficientes para posicionar productos de EE.UU. como exportaciones premium.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle" data-translate="services_subtitle">Nuestra Oferta</span>
+                    <h2 class="section-title" data-translate="services_title">Servicios de Consultoría Especializada</h2>
+                    <p class="section-desc" data-translate="services_desc">Diseñamos e implementamos soluciones pragmáticas y de alto retorno de inversión que modernizan sus plantas de producción.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="glass-panel service-card" id="serviceDigital">
+                        <div class="service-icon-wrapper">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2" y="2" width="20" height="14" rx="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <line x1="8" y1="20" x2="16" y2="20" stroke-linecap="round" stroke-linejoin="round"/>
+                                <line x1="12" y1="16" x2="12" y2="20" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="12" cy="9" r="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 data-translate="service_1_title">Transformación Digital e Industrial</h3>
+                        <p class="service-desc" data-translate="service_1_desc">
+                            Despliegue de sistemas ERP especializados en alimentos (SAP/Odoo) para trazabilidad a nivel de lotes, integración de sensores IoT para telemetría crítica en tiempo real y digitalización completa de flujos de trabajo en planta mediante tabletas.
+                        </p>
+                        <div class="service-rate">
+                            <span class="rate-label" data-translate="rate_label">Tarifa Promedio</span>
+                            <span class="rate-value">$225 / hr</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 2 -->
+                    <div class="glass-panel service-card" id="serviceOperational">
+                        <div class="service-icon-wrapper">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 6v6l4 2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 data-translate="service_2_title">Optimización Operacional</h3>
+                        <p class="service-desc" data-translate="service_2_desc">
+                            Reducción sistemática de desperdicios mediante Value Stream Mapping, eventos Kaizen y TPM. Fortalecemos sus sistemas de calidad para certificación internacional (ISO 22000, FSSC 22000) e integramos flujos de desviación en tiempo real y CAPA.
+                        </p>
+                        <div class="service-rate">
+                            <span class="rate-label" data-translate="rate_label">Tarifa Promedio</span>
+                            <span class="rate-value">$175 / hr</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 3 -->
+                    <div class="glass-panel service-card" id="serviceSupplyChain">
+                        <div class="service-icon-wrapper">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" stroke-linecap="round" stroke-linejoin="round"/>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96" stroke-linecap="round" stroke-linejoin="round"/>
+                                <line x1="12" y1="22.08" x2="12" y2="12" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 data-translate="service_3_title">Cadena de Suministro y de Frío</h3>
+                        <p class="service-desc" data-translate="service_3_desc">
+                            Ingeniería térmica y telemetría en tiempo real para evitar roturas de frío. Optimizamos redes logísticas descentralizadas mediante modelos de simulación y creamos planes detallados de mitigación de riesgos ante imprevistos del entorno.
+                        </p>
+                        <div class="service-rate">
+                            <span class="rate-label" data-translate="rate_label">Tarifa Promedio</span>
+                            <span class="rate-value">$200 / hr</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Expansion Section -->
+        <section id="growth" class="animate-on-scroll">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle" data-translate="timeline_subtitle">Plan de Expansión</span>
+                    <h2 class="section-title" data-translate="timeline_title">Estrategia Geográfica Phased 5 Años</h2>
+                    <p class="section-desc" data-translate="timeline_desc">Estructuramos un crecimiento sostenido para atender de manera directa las principales zonas agroindustriales del país.</p>
+                </div>
+                
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-progress"></div>
+                    
+                    <!-- Year 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-year">Año 1</span>
+                            <h3 class="timeline-title" data-translate="timeline_y1_title">Sur y Centro de Florida</h3>
+                            <p class="timeline-text" data-translate="timeline_y1_desc">Lanzamiento oficial enfocado en procesadores de alimentos del corredor agroindustrial consolidado de Florida, estableciendo casos de estudio iniciales.</p>
+                        </div>
+                        <div class="timeline-empty"></div>
+                    </div>
+                    
+                    <!-- Year 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-empty"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-year">Año 2</span>
+                            <h3 class="timeline-title" data-translate="timeline_y2_title">Expansión a Georgia</h3>
+                            <p class="timeline-text" data-translate="timeline_y2_desc">Ampliación de servicios a integradores avícolas y procesadores de cultivos especiales en Georgia, aprovechando la infraestructura consolidada en Florida.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Year 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-year">Año 3</span>
+                            <h3 class="timeline-title" data-translate="timeline_y3_title">Región de las Carolinas</h3>
+                            <p class="timeline-text" data-translate="timeline_y3_desc">Ingreso a los mercados de procesamiento de carne de cerdo y empaque estacional de las Carolinas, abordando sus particulares desafíos logísticos.</p>
+                        </div>
+                        <div class="timeline-empty"></div>
+                    </div>
+                    
+                    <!-- Year 4 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-empty"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-year">Año 4</span>
+                            <h3 class="timeline-title" data-translate="timeline_y4_title">Costa Este Ampliada</h3>
+                            <p class="timeline-text" data-translate="timeline_y4_desc">Atención a cooperativas lecheras y empresas productoras de comidas listas en un corredor extendido que abarca múltiples estados orientales.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Year 5 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-year">Año 5</span>
+                            <h3 class="timeline-title" data-translate="timeline_y5_title">Escala Nacional</h3>
+                            <p class="timeline-text" data-translate="timeline_y5_desc">Presencia a nivel nacional, apuntando a los molinos de granos del Medio Oeste y los distritos de cultivos orgánicos del Valle Central de California.</p>
+                        </div>
+                        <div class="timeline-empty"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Calculator Section -->
+        <section id="calculator">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle" data-translate="calc_subtitle">Cotizador en Línea</span>
+                    <h2 class="section-title" data-translate="calc_title">Estime el Valor de su Proyecto</h2>
+                    <p class="section-desc" data-translate="calc_desc">Ajuste las variables para obtener una aproximación transparente del costo del proyecto según el tipo de servicio y horas de consultoría.</p>
+                </div>
+                
+                <div class="glass-panel calc-card">
+                    <div class="calc-grid">
+                        <div class="calc-controls">
+                            <!-- Control 1 -->
+                            <div class="control-group">
+                                <label for="calcService" class="control-label" data-translate="calc_label_service">Solución Requerida</label>
+                                <select id="calcService" class="calc-select">
+                                    <option value="digital" data-translate="calc_option_1">Transformación Digital e Industrial ($225/hr)</option>
+                                    <option value="operational" data-translate="calc_option_2">Optimización Operacional ($175/hr)</option>
+                                    <option value="supplychain" data-translate="calc_option_3">Cadena de Suministro y Frío ($200/hr)</option>
+                                    <option value="package" data-translate="calc_option_4">Paquete Completo Blended ($200/hr)</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Control 2 -->
+                            <div class="control-group">
+                                <label for="calcHours" class="control-label">
+                                    <span data-translate="calc_label_hours">Horas Estimadas de Consultoría</span> 
+                                    <span id="hoursVal" class="val-display">40</span>
+                                </label>
+                                <input type="range" id="calcHours" class="calc-slider" min="10" max="200" step="5" value="40">
+                            </div>
+                            
+                            <!-- Control 3 -->
+                            <div class="control-group">
+                                <label for="calcWeeks" class="control-label">
+                                    <span data-translate="calc_label_weeks">Duración del Proyecto</span> 
+                                    <span id="weeksVal" class="val-display">4 wks</span>
+                                </label>
+                                <input type="range" id="calcWeeks" class="calc-slider" min="2" max="24" step="1" value="4">
+                            </div>
+                        </div>
+                        
+                        <div class="calc-results">
+                            <div class="results-content">
+                                <h3 class="results-title" data-translate="calc_results_title">Inversión Estimada</h3>
+                                <div class="results-price" id="displayPrice">$8,000</div>
+                                <span class="results-price-period" data-translate="calc_results_period">Valor Total Facturado</span>
+                                
+                                <div class="results-breakdown">
+                                    <div class="breakdown-row">
+                                        <span class="breakdown-label" data-translate="calc_break_rate">Tarifa por Hora:</span>
+                                        <span class="breakdown-val" id="breakRate">$200/hr</span>
+                                    </div>
+                                    <div class="breakdown-row">
+                                        <span class="breakdown-label" data-translate="calc_break_hours">Total Horas:</span>
+                                        <span class="breakdown-val" id="breakHours">40 hrs</span>
+                                    </div>
+                                    <div class="breakdown-row">
+                                        <span class="breakdown-label" data-translate="calc_break_sub">Subtotal:</span>
+                                        <span class="breakdown-val" id="breakSubtotal">$8,000</span>
+                                    </div>
+                                    <div class="breakdown-row" style="border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">
+                                        <span class="breakdown-label" data-translate="calc_break_disc">Descuento por Volumen:</span>
+                                        <span class="breakdown-val" style="color: var(--primary);" id="breakDiscount">$0</span>
+                                    </div>
+                                    <div class="breakdown-row" style="padding-top: 8px;">
+                                        <span class="breakdown-label" style="font-weight: 700;" data-translate="calc_break_net">Total Neto:</span>
+                                        <span class="breakdown-val" style="color: var(--secondary); font-size: 1.1rem;" id="breakTotal">$8,000</span>
+                                    </div>
+                                </div>
+                                <a href="#contact" class="btn btn-primary" style="width: 100%;" data-translate="calc_btn_formal">Solicitar Propuesta Formal</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container contact-grid">
+                <div class="contact-info">
+                    <span class="section-subtitle" data-translate="contact_subtitle">Póngase en Contacto</span>
+                    <h2 class="contact-info-title" data-translate="contact_title">Comencemos a Diseñar su Planta Inteligente</h2>
+                    <p class="contact-info-desc" data-translate="contact_desc">
+                        Complete el formulario para programar una llamada de diagnóstico inicial de 30 minutos sin costo con nuestro equipo técnico.
+                    </p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon-wrapper">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="12" cy="10" r="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="method-details">
+                                <h4 data-translate="contact_office_title">Oficina Central</h4>
+                                <p data-translate="contact_office_desc">Fort Lauderdale, FL (Southeastern Industrial Corridor)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon-wrapper">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <polyline points="22,6 12,13 2,6" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="method-details">
+                                <h4 data-translate="contact_email_title">Correo Electrónico</h4>
+                                <p>info@efchaconsultants.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-panel contact-form-wrapper">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="clientName" class="form-label" data-translate="contact_form_name">Nombre Completo</label>
+                            <input type="text" id="clientName" class="form-input" required placeholder="Ej. Juan Pérez" data-translate-placeholder="placeholder_name">
+                        </div>
+                        <div class="form-group">
+                            <label for="clientCompany" class="form-label" data-translate="contact_form_company">Compañía / Planta</label>
+                            <input type="text" id="clientCompany" class="form-input" required placeholder="Ej. Lacteos del Sur" data-translate-placeholder="placeholder_company">
+                        </div>
+                        <div class="form-group">
+                            <label for="clientEmail" class="form-label" data-translate="contact_form_email">Correo Profesional</label>
+                            <input type="email" id="clientEmail" class="form-input" required placeholder="nombre@compania.com" data-translate-placeholder="placeholder_email">
+                        </div>
+                        <div class="form-group">
+                            <label for="clientPhone" class="form-label" data-translate="contact_form_phone">Teléfono de Contacto</label>
+                            <input type="tel" id="clientPhone" class="form-input" required placeholder="+1 (555) 000-0000" data-translate-placeholder="placeholder_phone">
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="clientMsg" class="form-label" data-translate="contact_form_needs">Describa sus Necesidades Operacionales</label>
+                            <textarea id="clientMsg" class="form-input" placeholder="Cuéntenos brevemente los desafíos que desea solucionar en su línea de producción..." data-translate-placeholder="placeholder_msg"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="btnSubmitContact" data-translate="contact_btn_submit">Enviar Solicitud de Diagnóstico</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="#hero" class="logo">
+                        EFCHA<span>CONSULTANTS</span><span class="logo-dot"></span>
+                    </a>
+                    <p class="footer-desc" data-translate="footer_desc">
+                        Acompañamos a los procesadores agroalimentarios en su camino a la modernización industrial bajo el modelo de la Industria 4.0.
+                    </p>
+                </div>
+                <div class="footer-links-col">
+                    <h4 data-translate="footer_nav_lbl">Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="#hero" data-translate="nav_home">Inicio</a></li>
+                        <li><a href="#about" data-translate="nav_about">Nosotros</a></li>
+                        <li><a href="#services" data-translate="nav_services">Servicios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4 data-translate="footer_sup_lbl">Soporte</h4>
+                    <ul class="footer-links">
+                        <li><a href="#calculator" data-translate="footer_calc_link">Cotizar Proyecto</a></li>
+                        <li><a href="#contact" data-translate="nav_contact">Contacto</a></li>
+                        <li><a href="#about" data-translate="footer_gloria_link">Caso de Éxito Gloria S.A.</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-translate="footer_copyright">&copy; 2026 EFCHA CONSULTANTS. Todos los derechos reservados. Fort Lauderdale, Florida, EE.UU.</p>
+                <p data-translate="footer_tagline">Dirección Estratégica para Pymes Agroindustriales</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
